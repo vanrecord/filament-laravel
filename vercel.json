@@ -1,0 +1,45 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.7.3" }
+    },
+    "routes": [
+        {
+            "src": "/livewire/(.*)",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/build/(.*)",
+            "dest": "/build/$1"
+        },
+        {
+            "src": "/(.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico|ttf|woff|woff2|eot|otf|webp|avif|txt))$",
+            "dest": "/public/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "outputDirectory": "public",
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://filament-laravel.vercel.app",
+        "APP_KEY": "base64:fufO3DGqoJgUYAm69+6VX8+X+eT9pPTaRBUtvjNtFgM=",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "d1",
+        "CLOUDFLARE_D1_DATABASE_ID": "62c03e8a-2dfd-4bfe-92f6-16d03655b0bd",
+        "CLOUDFLARE_TOKEN": "_eBhdSAAeNs0SbKaG6KqhMRmFCHZZpcWvfgZ1tb8",
+        "CLOUDFLARE_ACCOUNT_ID": "53515d023e21a1dde3a9b6d3d06fc34a"
+    }
+}
