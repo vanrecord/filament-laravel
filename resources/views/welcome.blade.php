@@ -527,7 +527,7 @@
                             <p id="today"
                                class="mt-1 text-lg font-semibold
                                       text-slate-900
-                                      dark:text-white">
+                                      ">
                             </p>
 
                         </div>
@@ -546,7 +546,7 @@
                             <p id="next-birthday"
                                class="mt-1 text-lg font-semibold
                                       text-slate-900
-                                      dark:text-white">
+                                      ">
                             </p>
 
                         </div>
