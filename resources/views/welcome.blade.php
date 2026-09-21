@@ -141,7 +141,7 @@
                                     justify-center rounded-3xl
                                     bg-white/15 text-4xl font-bold
                                     shadow-xl ring-1 ring-white/30
-                                    backdrop-blur">
+                                    backdrop-blur rounded-lg">
 
                             <img src="https://res.cloudinary.com/iohcxvjz/image/upload/v1789979187/soma.jpg">
 
