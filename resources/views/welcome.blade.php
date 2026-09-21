@@ -143,7 +143,7 @@
                                     shadow-xl ring-1 ring-white/30
                                     backdrop-blur">
 
-                            KS
+                            <img src="https://res.cloudinary.com/iohcxvjz/image/upload/v1789979187/soma.jpg">
 
                         </div>
 
