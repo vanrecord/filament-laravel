@@ -49,13 +49,319 @@
                 </nav>
             @endif
         </header>
-        <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
-            <main class="flex max-w-[335px] w-full flex-col-reverse lg:max-w-4xl lg:flex-row">
-                <div class="text-[13px] leading-[20px] flex-1 p-6 pb-12 lg:p-20 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d] rounded-bl-lg rounded-br-lg lg:rounded-tl-lg lg:rounded-br-none">
-                    <h1 class="mb-1 font-medium">Helle welcome to filament Soma</h1>
+        <div class="flex items-center justify-center w-full min-h-screen px-4 py-10
+            bg-gradient-to-br from-slate-100 via-white to-indigo-100
+            dark:from-[#0f172a] dark:via-[#111827] dark:to-[#1e1b4b]">
+
+    <main class="w-full max-w-4xl overflow-hidden rounded-3xl
+                 bg-white/80 dark:bg-[#161615]/90
+                 shadow-2xl ring-1 ring-black/5 dark:ring-white/10
+                 backdrop-blur-xl">
+
+        <div class="grid lg:grid-cols-2">
+
+            <!-- Left: Profile -->
+            <div class="relative flex flex-col items-center justify-center
+                        p-8 lg:p-14 text-center
+                        bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500
+                        text-white">
+
+                <!-- Decorative circles -->
+                <div class="absolute -top-16 -right-16 w-40 h-40
+                            rounded-full bg-white/10"></div>
+
+                <div class="absolute -bottom-20 -left-16 w-48 h-48
+                            rounded-full bg-white/10"></div>
+
+                <!-- Profile Icon -->
+                <div class="relative z-10 flex items-center justify-center
+                            w-28 h-28 mb-6 rounded-full
+                            bg-white/20 backdrop-blur-md
+                            ring-4 ring-white/30 shadow-xl">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-14 h-14"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke="currentColor"
+                         stroke-width="1.5">
+
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 6a3.75 3.75 0 11-7.5 0
+                                 3.75 3.75 0 017.5 0z" />
+
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M4.5 20.25a8.25 8.25 0
+                                 0115 0" />
+                    </svg>
                 </div>
-            </main>
+
+                <div class="relative z-10">
+
+                    <p class="mb-2 text-sm font-medium uppercase
+                              tracking-[0.3em] text-white/70">
+                        Welcome
+                    </p>
+
+                    <h1 class="text-3xl lg:text-4xl font-bold tracking-tight">
+                        Khorn Sovannsoma
+                    </h1>
+
+                    <p class="mt-3 text-sm text-white/80">
+                        Personal Profile
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!-- Right: Information -->
+            <div class="p-8 lg:p-14">
+
+                <div class="mb-8">
+
+                    <p class="text-sm font-semibold uppercase tracking-widest
+                              text-indigo-600 dark:text-indigo-400">
+                        About Me
+                    </p>
+
+                    <h2 class="mt-2 text-2xl lg:text-3xl font-bold
+                               text-gray-900 dark:text-white">
+                        Hello, I'm Khorn Sovannsoma
+                    </h2>
+
+                    <p class="mt-3 text-gray-500 dark:text-gray-400">
+                        Welcome to my personal profile. Here is some basic
+                        information about me.
+                    </p>
+
+                </div>
+
+
+                <!-- Information Cards -->
+                <div class="grid gap-4 sm:grid-cols-2">
+
+                    <!-- Name -->
+                    <div class="rounded-2xl border border-gray-200
+                                bg-gray-50 p-5
+                                dark:border-white/10
+                                dark:bg-white/5">
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="flex h-10 w-10 items-center
+                                        justify-center rounded-xl
+                                        bg-indigo-100 text-indigo-600
+                                        dark:bg-indigo-500/20
+                                        dark:text-indigo-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     class="w-5 h-5"
+                                     fill="none"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor">
+
+                                    <path stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M5.121 17.804A9 9 0 1118.88
+                                             17.804M15 11a3 3 0 11-6 0
+                                             3 3 0 016 0z" />
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <p class="text-xs text-gray-500
+                                          dark:text-gray-400">
+                                    Name
+                                </p>
+
+                                <p class="font-semibold text-gray-900
+                                          dark:text-white">
+                                    Khorn Sovannsoma
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Date of Birth -->
+                    <div class="rounded-2xl border border-gray-200
+                                bg-gray-50 p-5
+                                dark:border-white/10
+                                dark:bg-white/5">
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="flex h-10 w-10 items-center
+                                        justify-center rounded-xl
+                                        bg-purple-100 text-purple-600
+                                        dark:bg-purple-500/20
+                                        dark:text-purple-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     class="w-5 h-5"
+                                     fill="none"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor">
+
+                                    <path stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M8 7V3m8 4V3m-9 8h10
+                                             M5 5h14a2 2 0 012 2v12a2 2
+                                             0 01-2 2H5a2 2 0 01-2-2V7
+                                             a2 2 0 012-2z" />
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <p class="text-xs text-gray-500
+                                          dark:text-gray-400">
+                                    Date of Birth
+                                </p>
+
+                                <p class="font-semibold text-gray-900
+                                          dark:text-white">
+                                    September 6, 2026
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Age -->
+                <div class="mt-4 rounded-2xl
+                            bg-gradient-to-r from-indigo-500 to-purple-600
+                            p-6 text-white shadow-lg">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-sm font-medium text-white/70">
+                                Current Age
+                            </p>
+
+                            <div id="age"
+                                 class="mt-1 text-3xl font-bold">
+                                Calculating...
+                            </div>
+
+                        </div>
+
+                        <div class="flex h-14 w-14 items-center justify-center
+                                    rounded-2xl bg-white/15">
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 class="w-7 h-7"
+                                 fill="none"
+                                 viewBox="0 0 24 24"
+                                 stroke="currentColor">
+
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                      d="M12 8v4l3 3m6-3a9 9 0
+                                         11-18 0 9 9 0 0118 0z" />
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Footer -->
+                <div class="mt-8 text-center">
+
+                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                        © <span id="year"></span> Khorn Sovannsoma
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
+
+    </main>
+</div>
+
+
+<script>
+    function calculateAge(dateOfBirth) {
+        const birthDate = new Date(dateOfBirth);
+        const today = new Date();
+
+        let years = today.getFullYear() - birthDate.getFullYear();
+        let months = today.getMonth() - birthDate.getMonth();
+        let days = today.getDate() - birthDate.getDate();
+
+        if (days < 0) {
+            months--;
+
+            const previousMonth = new Date(
+                today.getFullYear(),
+                today.getMonth(),
+                0
+            );
+
+            days += previousMonth.getDate();
+        }
+
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        return {
+            years: years,
+            months: months,
+            days: days
+        };
+    }
+
+    const dob = "2026-09-06";
+    const age = calculateAge(dob);
+
+    let ageText = "";
+
+    if (age.years > 0) {
+        ageText += `${age.years} year${age.years !== 1 ? "s" : ""}`;
+    }
+
+    if (age.months > 0) {
+        if (ageText) ageText += ", ";
+        ageText += `${age.months} month${age.months !== 1 ? "s" : ""}`;
+    }
+
+    if (age.days > 0) {
+        if (ageText) ageText += ", ";
+        ageText += `${age.days} day${age.days !== 1 ? "s" : ""}`;
+    }
+
+    if (!ageText) {
+        ageText = "0 days";
+    }
+
+    document.getElementById("age").textContent = ageText;
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
 
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
